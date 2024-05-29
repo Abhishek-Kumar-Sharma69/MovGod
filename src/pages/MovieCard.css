@@ -1,0 +1,103 @@
+.movie-card {
+    width: 310px;
+    height: 460px;
+    margin: 1.5rem;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+  }
+  
+  .movie-card-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .movie-card-image img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .movie-card-details {
+    z-index: 2;
+    background-color: #343739;
+    padding: 16px 24px 24px 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .movie-card-type {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+  
+  .movie-card-title {
+    margin-top: 5px;
+    font-family: "Roboto Slab", serif;
+    color: #f9d3b4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .movie-card:hover .movie-card-image {
+    height: 100%;
+    opacity: 0.3;
+  }
+  
+  .movie-card:hover .movie-card-details {
+    background-color: transparent;
+  }
+  
+  .movie-card:hover .movie-card-info {
+    opacity: 1;
+  }
+  .add-to-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    text-align: center;
+    z-index: 99999;
+  }
+  
+  .add-to-list button {
+    padding: 8px 16px;
+    background-color: #212426;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .add-to-list button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #212426;
+  }
+ 
+  /* .add-to-list button {
+    padding: 5px;
+    background-color: #888;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+  } */

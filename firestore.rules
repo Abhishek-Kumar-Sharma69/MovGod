@@ -1,0 +1,29 @@
+rules_version = '2';
+
+service cloud.firestore {
+match /databases/{database}/documents {
+    match /UsersData/{userId} {
+      allow read: if true; // Adjust according to your security needs
+    }
+    // Match any document in the "lists" collection
+    match /users/{userId}/lists/{listId} {
+      
+      // Allow read access to public lists
+      allow read: if resource.data.public == true;
+      
+      // Allow write access to authenticated users only
+      allow write: if request.auth != null && request.auth.uid == userId;
+      
+      // Allow read and write access to the owner of the list
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  
+
+
+    match /users/{userId} {
+      allow read,write: if request.auth !=null;
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    }
+    
+}

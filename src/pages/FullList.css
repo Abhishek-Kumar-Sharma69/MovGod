@@ -1,0 +1,66 @@
+.list-movies-container {
+    background-color: #212426;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-movies-container h2 {
+    color: #ccc;
+  }
+  
+  .list-movies-container p {
+    color: #ccc;
+  }
+  
+  .list-movies-container button {
+    padding: 8px 16px;
+    background-color: #212426;
+    border: none;
+    border-radius: 4px;
+    color: #888;
+    border:2px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .list-movies-container button:hover {
+    background-color: #ccc;
+    color: #333;
+  }
+  .list-movies-container .delete-button {
+    background: red;
+    color: white;
+  }
+  
+  .list-movies-container .delete-button:hover {
+    background: darkred;
+  }
+  .movie-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movie-item {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #212426;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-item h3 {
+    color: #333;
+  }
+  
+  .movie-item p {
+    color: #666;
+  }
+
+  .no-results{
+    size:40px;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+  }
+  
