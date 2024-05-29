@@ -6,7 +6,7 @@ import NavBar from './Navbar';
 import MovieCard from './MovieCard';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import Loading from './Loading';
+
 
 const Home = () => {
   const [user] = useAuthState(auth);
