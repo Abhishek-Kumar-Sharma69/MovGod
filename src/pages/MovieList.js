@@ -15,7 +15,7 @@ const MovieList = () => {
         const fetchMovies=async ()=>{
         if (searchTerm) {
         try {
-          const response = await fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=fb85210e`);
+          const response = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=fb85210e`);
           const data = await response.json();
           if (data.Search) {
             setFlag(1);
